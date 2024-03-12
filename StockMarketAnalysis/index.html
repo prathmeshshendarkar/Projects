@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chart-section">
+            <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+            <button onclick="changeTimeRange('1mo')">1 Month</button>
+            <button onclick="changeTimeRange('3mo')">3 Months</button>
+            <button onclick="changeTimeRange('1y')">1 Year</button>
+            <button onclick="changeTimeRange('5y')">5 Years</button>
+        </div>
+        <div class="list-section" id="stockList">
+            <!-- Stock list will be populated dynamically -->
+        </div>
+        <div class="details-section" id="stockDetails">
+            <!-- Stock details will be populated dynamically -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

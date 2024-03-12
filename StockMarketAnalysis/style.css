@@ -1,0 +1,37 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart-section {
+    flex: 1;
+}
+
+.list-section {
+    flex: 1;
+}
+
+.details-section {
+    flex: 1;
+}
+
+.stock-item {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.stock-item:hover {
+    background-color: #f0f0f0;
+}
